@@ -1,0 +1,126 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+ 
+
+#plantilla {
+    display: grid;
+    height: 100vh;
+    grid-template-areas: 
+    "header header header"
+    "producto producto publicidad"
+    "producto producto servicios"
+    "footer footer footer";
+    grid-template-rows: 50px 350px 350px 50px;
+    grid-template-columns: repeat(3 500px);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+
+}
+
+.header {
+    grid-area: header;
+    background-color: blueviolet;
+    
+    
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+header ul li {
+    display: inline;
+    margin: 10px 10px ;
+
+}
+
+header ul li a{
+    text-decoration: none;
+
+}
+
+header ul li a:hover {
+    color: white;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: blueviolet;
+}
+
+.publicidad {
+    grid-area: publicidad;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.publicidad img{
+    grid-area: publicidad;
+    width: 500px;
+    height: 350px;
+    
+}
+
+.menu {
+    grid-area: menu;
+    background-color: red;
+}
+
+.servicios {
+    grid-area: servicios;
+    transition: width 2s, height 2s, transform 2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.servicios img{
+    grid-area: servicios;
+    width: 300px;
+    height: 150px;
+    
+}
+
+.servicios:hover {
+    width: 500px;
+    height: 350px;
+    transform: rotate(360deg) scale(3,2);
+    
+}
+
+.producto {
+    grid-area: producto;
+    transition: width 2s, height 2s, transform 2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.producto:hover {
+    grid-area: producto;
+    width: 400px;
+    height: 400px;
+    transform: rotate(360deg) scale(3,2);;
+
+
+}
+
+.producto img{
+    grid-area: producto;
+    width: 400px;
+    height: 400px;
+    
+
+}
+
+
